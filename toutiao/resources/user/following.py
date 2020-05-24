@@ -66,3 +66,5 @@ class FollowingListResource(Resource):
         current_app.sio_mgr.emit('following notify', data=_data, room=str(target))  # target指的是被关注用户的id
 
         return {'target': target}, 201
+
+
