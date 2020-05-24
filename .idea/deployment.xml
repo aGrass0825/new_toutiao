@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData">
+  <component name="PublishConfigData" autoUpload="Always" serverName="Copy of project-level server 'new_toutiao'">
     <serverData>
       <paths name="Copy of project-level server 'gRPC_test'">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Copy of project-level server 'new_toutiao'">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/python/new_toutiao" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>
@@ -16,6 +23,14 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="new_toutiao">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/python/new_toutiao" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
     </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>
