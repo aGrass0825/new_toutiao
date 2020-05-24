@@ -1,0 +1,5 @@
+# 每页的最小值
+DEFAULT_SEARCH_PER_PAGE_MIN = 5
+
+# 每页容量的最大上限
+DEFAULT_SEARCH_PER_PAGE_MAX = 20

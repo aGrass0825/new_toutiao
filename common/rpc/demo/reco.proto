@@ -1,0 +1,34 @@
+syntax = "proto3";
+//gRPC中使用的是proto3版本
+
+message UserRequest {
+    int32 channel_id=1;
+    string user_id=2;
+    int32 article_num=3;
+    int64 time_stamp=4;
+}
+
+message Track {
+//    reserved 1; 或者reserved 'read';声明不能使用，已经占用
+    string click=1;
+    string collect=2;
+    string liking=3;
+    string read=4;
+}
+
+message Article {
+    int64 article_id=1;
+    Track track=2;
+}
+
+message ArticleResponse {
+    int64 time_stamp=1;
+//     曝光埋点参数
+    string exposure=2;
+    repeated Article recommends=3;
+}
+
+// 声明RPC调用的服务
+service UserRecommend {
+    rpc user_recommend(UserRequest) returns (ArticleResponse) {};
+}
